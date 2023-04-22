@@ -1,0 +1,74 @@
+/* section #section-dashboard-background{
+    background-image: url('../img/2204-jellyfish.png');
+} */
+
+.block {
+	position: relative;
+	margin: 200px auto 0;
+	/* width: 500px;
+	height: 250px; */
+	width: auto;
+	height: 50%;
+	background: linear-gradient(0deg, #fff, #ffff);
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
+
+#section-dashboard-background{
+	margin-top: 120px;
+}
+
+#main{
+	margin-top: 40rem;
+	height: 200px;
+}
+
+#about{
+	position: relative;
+	top:100px;
+}
+
+#portfolio{
+	position: relative;
+	top:400px;
+	height:auto;
+}
+
+div.container header section#section-dashboard-background{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+footer{
+	position: relative;
+	top:230rem;
+	padding-bottom: 30px;
+}
